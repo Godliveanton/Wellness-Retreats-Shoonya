@@ -1,0 +1,122 @@
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  background-color: #e0d9cf;
+  justify-content: center;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: 40% 0;
+}
+
+.card-data {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 500px;
+  gap: 50px;
+  padding: 10px;
+}
+
+.nav-heading {
+  display: flex;
+  background-color: #1b3252;
+  padding: 20px;
+  font-size: 30px;
+  color: white;
+}
+
+.filterTab {
+  display: grid;
+  grid-template-columns: 200px 200px 1fr;
+}
+
+.filterType {
+  background-color: #1b3252;
+  color: white;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.searchInput {
+  background-color: #1b3252;
+  color: white;
+  width: 60%;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px;
+  justify-self: end;
+}
+
+.buttonContainer {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.buttonPrev {
+  justify-self: end;
+}
+
+.buttonNext {
+  justify-self: start;
+}
+
+button {
+  background-color: #1b3252;
+  padding: 10px;
+  border-radius: 10px;
+  width: fit-content;
+  color: white;
+}
+
+footer {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .app {
+    justify-content: center;
+  }
+  .nav-heading {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .filterTab {
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .filterType {
+    width: 90%;
+    margin-top: 10px;
+    justify-self: center;
+  }
+
+  .searchInput {
+    width: 90%;
+    margin-top: 10px;
+    justify-self: center;
+  }
+
+  .card-data {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+}
